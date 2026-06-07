@@ -1,0 +1,93 @@
+[
+  {
+    "title": "Applied Surface Science",
+    "kind": "Reviewer Certificate",
+    "asset": "assets/certificates/01-applied-surface-science.pdf",
+    "thumb": "assets/certificates/01-applied-surface-science.pdf",
+    "is_pdf": true
+  },
+  {
+    "title": "Arabian Journal of Chemistry",
+    "kind": "Reviewer Certificate",
+    "asset": "assets/certificates/02-arabian-journal-of-chemistry.pdf",
+    "thumb": "assets/certificates/02-arabian-journal-of-chemistry.pdf",
+    "is_pdf": true
+  },
+  {
+    "title": "Arabian Journal of Chemistry",
+    "kind": "Reviewer Certificate",
+    "asset": "assets/certificates/03-arabian-journal-of-chemistry.pdf",
+    "thumb": "assets/certificates/03-arabian-journal-of-chemistry.pdf",
+    "is_pdf": true
+  },
+  {
+    "title": "Reviewer Recognition",
+    "kind": "Reviewer Certificate",
+    "asset": "assets/certificates/04-reviewer-recognition.pdf",
+    "thumb": "assets/certificates/04-reviewer-recognition.pdf",
+    "is_pdf": true
+  },
+  {
+    "title": "Reviewer Recognition",
+    "kind": "Reviewer Certificate",
+    "asset": "assets/certificates/05-reviewer-recognition.pdf",
+    "thumb": "assets/certificates/05-reviewer-recognition.pdf",
+    "is_pdf": true
+  },
+  {
+    "title": "Results in Engineering",
+    "kind": "Reviewer Certificate",
+    "asset": "assets/certificates/06-results-in-engineering.pdf",
+    "thumb": "assets/certificates/06-results-in-engineering.pdf",
+    "is_pdf": true
+  },
+  {
+    "title": "Journal of Environmental Management",
+    "kind": "Reviewer Certificate",
+    "asset": "assets/certificates/07-journal-of-environmental-management.pdf",
+    "thumb": "assets/certificates/07-journal-of-environmental-management.pdf",
+    "is_pdf": true
+  },
+  {
+    "title": "Journal of Environmental Management",
+    "kind": "Reviewer Certificate",
+    "asset": "assets/certificates/08-journal-of-environmental-management.pdf",
+    "thumb": "assets/certificates/08-journal-of-environmental-management.pdf",
+    "is_pdf": true
+  },
+  {
+    "title": "Elsevier Certificate of Reviewing",
+    "kind": "Reviewer Certificate",
+    "asset": "assets/certificates/09-elsevier-certificate-of-reviewing.pdf",
+    "thumb": "assets/certificates/09-elsevier-certificate-of-reviewing.pdf",
+    "is_pdf": true
+  },
+  {
+    "title": "Avatar Ignite Program",
+    "kind": "Certificate of Completion",
+    "asset": "assets/certificates/10-avatar-ignite-program.jpg",
+    "thumb": "assets/certificates/10-avatar-ignite-program.jpg",
+    "is_pdf": false
+  },
+  {
+    "title": "Reviewer Recognition",
+    "kind": "Certificate",
+    "asset": "assets/certificates/11-reviewer-recognition.jpg",
+    "thumb": "assets/certificates/11-reviewer-recognition.jpg",
+    "is_pdf": false
+  },
+  {
+    "title": "Avatar Ignite 2026 Team",
+    "kind": "Program Highlight",
+    "asset": "assets/certificates/12-avatar-ignite-2026-team.jpg",
+    "thumb": "assets/certificates/12-avatar-ignite-2026-team.jpg",
+    "is_pdf": false
+  },
+  {
+    "title": "Avatar Ignite 2026",
+    "kind": "Program Highlight",
+    "asset": "assets/certificates/13-avatar-ignite-2026.jpg",
+    "thumb": "assets/certificates/13-avatar-ignite-2026.jpg",
+    "is_pdf": false
+  }
+]

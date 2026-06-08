@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teaching | Hamidreza Rezania</title>
+  <style>
+    :root {
+      --sidebar: #252525;
+      --sidebar-soft: #303030;
+      --paper: #f4f4f4;
+      --white: #ffffff;
+      --ink: #333333;
+      --muted: #70767a;
+      --line: #d8d8d8;
+      --accent: #8b1238;
+      --blue: #2f7898;
+      --gold: #b7892e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Lato, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--sidebar);
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .layout {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 250px minmax(0, 1fr);
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      color: #fff;
+      background: linear-gradient(180deg, #292929 0%, #222 100%);
+      border-right: 1px solid #1b1b1b;
+    }
+
+    .identity {
+      min-height: 326px;
+      padding: 180px 42px 36px 56px;
+    }
+
+    .identity h1 {
+      margin: 0;
+      font-size: 30px;
+      line-height: 1.06;
+      font-weight: 700;
+    }
+
+    .identity p {
+      margin: 10px 0 0;
+      color: #58a5ca;
+      font-size: 17px;
+      line-height: 1.35;
+    }
+
+    .nav {
+      border-top: 1px solid #424242;
+    }
+
+    .nav a {
+      display: block;
+      padding: 13px 16px 13px 62px;
+      color: #eee;
+      background: var(--sidebar-soft);
+      border-bottom: 1px solid #202020;
+      font-size: 14px;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      color: #fff;
+      background: #3a3a3a;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    main {
+      min-width: 0;
+      background: var(--paper);
+    }
+
+    .section {
+      position: relative;
+      padding: 72px max(8vw, 44px);
+      background: var(--paper);
+    }
+
+    .section.white {
+      background: var(--white);
+    }
+
+    .section::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -24px;
+      z-index: 1;
+      width: 48px;
+      height: 48px;
+      transform: translateX(-50%) rotate(45deg);
+      background: inherit;
+    }
+
+    .section:last-of-type::after {
+      display: none;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      width: min(860px, 100%);
+      margin: 0 auto;
+    }
+
+    h2 {
+      margin: 0 0 26px;
+      font-size: 50px;
+      line-height: 1;
+      font-weight: 300;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: min(460px, 100%);
+      height: 1px;
+      margin-top: 25px;
+      background: var(--line);
+    }
+
+    .lead {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .topic-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .topic-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--accent);
+      border-radius: 4px;
+      padding: 18px;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+    }
+
+    .white .topic-card {
+      background: #f8f8f8;
+    }
+
+    .topic-card h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    .topic-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .material-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .material {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: center;
+      background: #fff;
+      border-left: 4px solid var(--gold);
+      padding: 14px 16px;
+    }
+
+    .material strong {
+      display: block;
+      font-size: 16px;
+    }
+
+    .material span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer {
+      background: #222;
+      color: #d8d8d8;
+      padding: 28px 40px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 860px) {
+      .layout {
+        display: block;
+      }
+
+      .sidebar {
+        position: relative;
+        height: auto;
+      }
+
+      .identity {
+        min-height: auto;
+        padding: 34px 26px 24px;
+      }
+
+      .nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .nav a {
+        padding: 12px 18px;
+      }
+
+      .section {
+        padding: 56px 22px;
+      }
+
+      h2 {
+        font-size: 40px;
+      }
+
+      .topic-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .material {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="identity">
+        <h1>Teaching</h1>
+        <p>Hamidreza Rezania</p>
+      </div>
+      <nav class="nav" aria-label="Teaching navigation">
+        <a class="active" href="#polymer">Polymer</a>
+        <a href="#membrane">Membrane</a>
+        <a href="#process">Process</a>
+        <a href="index.html">Back to Website</a>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="section" id="polymer">
+        <div class="content">
+          <h2>Polymer</h2>
+          <p class="lead">Teaching materials for polymer chemistry, polymer synthesis, structure-property relationships, characterization, and practical formulation concepts.</p>
+          <div class="topic-grid">
+            <article class="topic-card">
+              <h3>Polymer Synthesis</h3>
+              <p>Step-growth and chain-growth polymerization, monomer design, crosslinking chemistry, and reaction planning.</p>
+            </article>
+            <article class="topic-card">
+              <h3>Polymer Characterization</h3>
+              <p>Thermal, chemical, molecular-weight, morphology, and mechanical-property analysis.</p>
+            </article>
+            <article class="topic-card">
+              <h3>Structure-Property Relationships</h3>
+              <p>How backbone chemistry, functional groups, morphology, and processing influence material performance.</p>
+            </article>
+            <article class="topic-card">
+              <h3>Polymer Modification</h3>
+              <p>Functionalization, grafting, crosslinking, blending, and post-synthesis modification strategies.</p>
+            </article>
+          </div>
+          <div class="material-list">
+            <div class="material"><strong>Lecture Slides</strong><span>To be added</span></div>
+            <div class="material"><strong>Assignments & Examples</strong><span>To be added</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section white" id="membrane">
+        <div class="content">
+          <h2>Membrane</h2>
+          <p class="lead">Teaching materials for membrane materials, fabrication methods, membrane morphology, transport, and separation performance.</p>
+          <div class="topic-grid">
+            <article class="topic-card">
+              <h3>Membrane Fabrication</h3>
+              <p>NIPS, interfacial polymerization, thin-film composite membranes, flat-sheet systems, and hollow fiber spinning.</p>
+            </article>
+            <article class="topic-card">
+              <h3>Membrane Morphology</h3>
+              <p>Selective skin layer, transition layer, sponge-like substructure, macrovoids, porosity, and support layers.</p>
+            </article>
+            <article class="topic-card">
+              <h3>Transport & Selectivity</h3>
+              <p>Flux, rejection, permeability, selectivity, mass transfer, fouling, and performance trade-offs.</p>
+            </article>
+            <article class="topic-card">
+              <h3>Membrane Applications</h3>
+              <p>OSN, NF, RO, UF, PFAS removal, carbon capture, wastewater treatment, and desalination.</p>
+            </article>
+          </div>
+          <div class="material-list">
+            <div class="material"><strong>SEM Image Notes</strong><span>To be added</span></div>
+            <div class="material"><strong>Lab Demonstrations</strong><span>To be added</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="process">
+        <div class="content">
+          <h2>Process</h2>
+          <p class="lead">Teaching materials for process design, membrane system integration, scale-up, pilot operation, and commercialization readiness.</p>
+          <div class="topic-grid">
+            <article class="topic-card">
+              <h3>Separation Process Design</h3>
+              <p>Process selection, membrane configuration, staging, mass balance, and operating-window development.</p>
+            </article>
+            <article class="topic-card">
+              <h3>Cross-Flow Filtration</h3>
+              <p>System layout, pressure control, permeate/retentate handling, flux monitoring, and stability testing.</p>
+            </article>
+            <article class="topic-card">
+              <h3>PFD & P&ID Basics</h3>
+              <p>Process flow diagrams, piping and instrumentation diagrams, and pilot-system documentation.</p>
+            </article>
+            <article class="topic-card">
+              <h3>Scale-Up & Commercialization</h3>
+              <p>Technology transfer, SOPs, quality control, pilot validation, techno-economic thinking, and product readiness.</p>
+            </article>
+          </div>
+          <div class="material-list">
+            <div class="material"><strong>Process Case Studies</strong><span>To be added</span></div>
+            <div class="material"><strong>Calculation Worksheets</strong><span>To be added</span></div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        &copy; 2026 Hamidreza Rezania. Teaching materials.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

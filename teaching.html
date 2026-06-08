@@ -6,16 +6,18 @@
   <title>Teaching | Hamidreza Rezania</title>
   <style>
     :root {
-      --sidebar: #252525;
-      --sidebar-soft: #303030;
-      --paper: #f4f4f4;
+      --sidebar: #17212b;
+      --sidebar-soft: #213140;
+      --paper: #f6f8fa;
       --white: #ffffff;
-      --ink: #333333;
-      --muted: #70767a;
-      --line: #d8d8d8;
-      --accent: #8b1238;
-      --blue: #2f7898;
-      --gold: #b7892e;
+      --ink: #263238;
+      --muted: #68737d;
+      --line: #d7dde2;
+      --accent: #0f8b8d;
+      --accent-2: #f2a541;
+      --accent-3: #b7355c;
+      --blue: #236f9f;
+      --gold: #d99b2b;
     }
 
     * {
@@ -54,8 +56,8 @@
       top: 0;
       height: 100vh;
       color: #fff;
-      background: linear-gradient(180deg, #292929 0%, #222 100%);
-      border-right: 1px solid #1b1b1b;
+      background: linear-gradient(180deg, #17212b 0%, #213140 55%, #163434 100%);
+      border-right: 1px solid #12202a;
     }
 
     .identity {
@@ -72,28 +74,28 @@
 
     .identity p {
       margin: 10px 0 0;
-      color: #58a5ca;
+      color: #77d8d3;
       font-size: 17px;
       line-height: 1.35;
     }
 
     .nav {
-      border-top: 1px solid #424242;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
     }
 
     .nav a {
       display: block;
       padding: 13px 16px 13px 62px;
-      color: #eee;
+      color: #f0f5f5;
       background: var(--sidebar-soft);
-      border-bottom: 1px solid #202020;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.32);
       font-size: 14px;
     }
 
     .nav a:hover,
     .nav a.active {
       color: #fff;
-      background: #3a3a3a;
+      background: #0f8b8d;
       font-weight: 700;
       text-decoration: none;
     }
@@ -157,6 +159,15 @@
       line-height: 1.7;
     }
 
+    .learning-note {
+      margin: 26px 0 0;
+      padding: 16px 18px;
+      background: linear-gradient(90deg, rgba(15, 139, 141, 0.12), rgba(242, 165, 65, 0.14));
+      border-left: 4px solid var(--accent-2);
+      border-radius: 4px;
+      color: #233844;
+    }
+
     .topic-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -170,7 +181,25 @@
       border-left: 4px solid var(--accent);
       border-radius: 4px;
       padding: 18px;
-      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+      box-shadow: 0 10px 24px rgba(20, 45, 55, 0.08);
+      transition: transform 160ms ease, box-shadow 160ms ease;
+    }
+
+    #polymer .topic-card {
+      border-left-color: var(--accent-3);
+    }
+
+    #membrane .topic-card {
+      border-left-color: var(--accent);
+    }
+
+    #process .topic-card {
+      border-left-color: var(--accent-2);
+    }
+
+    .topic-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 32px rgba(20, 45, 55, 0.12);
     }
 
     .white .topic-card {
@@ -181,6 +210,7 @@
       margin: 0 0 8px;
       font-size: 20px;
       line-height: 1.25;
+      color: #183442;
     }
 
     .topic-card p {
@@ -203,6 +233,8 @@
       background: #fff;
       border-left: 4px solid var(--gold);
       padding: 14px 16px;
+      border-radius: 4px;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
     }
 
     .material strong {
@@ -216,7 +248,7 @@
     }
 
     footer {
-      background: #222;
+      background: #17212b;
       color: #d8d8d8;
       padding: 28px 40px;
       text-align: center;
@@ -285,6 +317,7 @@
         <div class="content">
           <h2>Polymer</h2>
           <p class="lead">Teaching materials for polymer chemistry, polymer synthesis, structure-property relationships, characterization, and practical formulation concepts.</p>
+          <div class="learning-note">This teaching space is prepared as a future learning hub for short notes, lecture slides, examples, lab visuals, calculation sheets, and practical case studies.</div>
           <div class="topic-grid">
             <article class="topic-card">
               <h3>Polymer Synthesis</h3>

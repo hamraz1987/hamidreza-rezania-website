@@ -220,7 +220,7 @@
 
     .timeline-item {
       display: grid;
-      grid-template-columns: minmax(190px, auto) 104px minmax(0, 1fr);
+      grid-template-columns: 190px 112px minmax(0, 1fr);
       gap: 0 20px;
       align-items: start;
     }
@@ -228,6 +228,7 @@
     .label,
     .year {
       display: inline-flex;
+      width: 100%;
       min-height: 34px;
       align-items: center;
       padding: 6px 12px;
@@ -240,6 +241,7 @@
       justify-content: center;
       background: var(--accent-dark);
       font-weight: 700;
+      white-space: nowrap;
     }
 
     .timeline-copy {
